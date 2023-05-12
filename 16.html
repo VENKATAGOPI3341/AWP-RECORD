@@ -1,0 +1,28 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <h1 style="background: skyblue;"><marquee behavior="" direction="">jQuery Code to Find the data passed with the on() method for each element.</marquee></h1>
+	<title>jQuery example</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").on("click", {foo: "bar"}, function(event){
+				// get the data passed with the on() method
+				var eventData = event.data;
+				
+				// display the data in an alert box
+				alert("The data passed with the on() method is: " + eventData.foo);
+			});
+		});
+	</script>
+</head>
+<body style="background-color:lightpink ;">
+	<h2>jQuery on() Method Example</h2>
+	<button>Click Here </button>
+</body>
+</html>
